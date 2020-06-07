@@ -10,7 +10,6 @@
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand second-hand"></div>
-        <div class="secret"></div>
       </div>
     </div>
 
@@ -70,8 +69,6 @@
       const second_hand = document.querySelector(".second-hand");
       const min_hand = document.querySelector(".min-hand");
       const hour_hand = document.querySelector(".hour-hand");
-      const secret = document.querySelector(".secret");
-      secret.innerText = process.env.SECRET;
       function setDate() {
         const now = new Date();
         const seconds = now.getSeconds();
